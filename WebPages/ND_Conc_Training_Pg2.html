@@ -66,9 +66,9 @@ Recognizing a concussion requires remaining alert for a wide variety of differen
 </div>
 <div class="sgn_img" id="sgn_img"><img src="../Images/player2.png" alt="PlayerGraphic" width="137" height="300" /></div>
 </div>
-  <div id="Next_Btn">
-<span class="next"><a href="../WebPages/ND_Conc_Training_Pg3_q3.html" target="_parent">Next</a></span></div>
 </div>
+  <div id="Next_Btn">
+<span class="next"><a href="../WebPages/ND_Conc_Training_Pg3_q3.html" target="_parent">Begin Quiz</a></span></div>
 </div>
 <script>
 $( "#sym_btn" ).click(function() {
@@ -79,7 +79,7 @@ $( "#sym_btn" ).click(function() {
 $( "#sgn_btn" ).click(function() {
   $( "#sgn_img" ).fadeIn( 3000 );
   $( "#sgn_list" ).fadeIn( 3000 );
-  $( "#Next_Btn" ).fadeIn( 3000 );
+  $( "#Next_Btn" ).delay(800).fadeIn( 3000 );
   return false;
 });
 
