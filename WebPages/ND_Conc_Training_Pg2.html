@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notre Dame Concussion Training</title>
+<link href="../WebPages/nd_conc_training.css" rel="stylesheet" type="text/css">
+<script src="../WebPages/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="pg_head"><span class="title">Signs and Symptoms</span></div>
+<div id="body_content">
+
+<div class="body_txt" id="body_txt1">
+There is no one single indicator for concussion, and symptoms can vary significantly depending on the nature of the injury and each individual's response. Most concussed people do not lose consciousness and some symptoms may not be immediately noticeable.
+<br>
+<br>
+Recognizing a concussion requires remaining alert for a wide variety of different types of signs or symptoms. This includes both external signs that can be identified by others and symptoms that may only be immediately noticeable to the athlete.
+</div>
+
+<div class="sym_chart">
+<div class="sym_chart_left">
+<div id="lt_animation">
+<div class="sym_btn" id="sym_btn">Symptoms</div>
+<div class="sym_img" id="sym_img"><img src="../Images/player1.png" alt="CoachGraphic" width="133" height="300" /></div>
+<div class="sym_list" id="sym_list">
+<ul>
+<li>Nausea/vomiting</li>
+<li>Confusion</li>
+<li>Irritability</li>
+<li>Headaches</li>
+<li>Ringing in ears</li>
+<li>Fatigue</li>
+<li>Light headedness</li>
+<li>Disorientation</li>
+<li>Seeing bright lights/stars</li>
+<li>Depression</li>
+<li>Feeling stunned</li>
+<li>Pressure in head</li>
+<li>Neck pain</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="sym_chart_right">
+<div id="rt_animation">
+<div class="sgn_btn" id="sgn_btn">Signs</div>
+<div class="sgn_list" id="sgn_list">
+<ul>
+<li>Difficulty  concentrating</li>
+<li>Reduced attention</li>
+<li>Decreased playing ability</li>
+<li>Cognitive dysfunction</li>
+<li>Vacant stare</li>
+<li>Personality change</li>
+<li>Loss of consciousness</li>
+<li>Slurred/incoherent speech</li>
+<li>Delayed verbal or motor responses</li>
+<li>Sleep disturbances</li>
+<li>Vomiting</li>
+<li>Sensitivity to noise or light</li>
+<li>Poor balance or coordination</li>
+</li>
+</ul>
+</div>
+<div class="sgn_img" id="sgn_img"><img src="../Images/player2.png" alt="PlayerGraphic" width="137" height="300" /></div>
+</div>
+</div>
+</div>
+<script>
+$( "#sym_btn" ).click(function() {
+  $( "#sym_img" ).fadeIn( 3000 );
+  $( "#sym_list" ).fadeIn( 3000 );
+  return false;
+});
+$( "#sgn_btn" ).click(function() {
+  $( "#sgn_img" ).fadeIn( 3000 );
+  $( "#sgn_list" ).fadeIn( 3000 );
+  return false;
+});
+</script>
+
+
+</div>
+</div>
+</body>
+</html>
+
+

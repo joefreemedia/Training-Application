@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notre Dame Concussion Training</title>
+<link href="../WebPages/nd_conc_training.css" rel="stylesheet" type="text/css">
+<script src="../WebPages/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="pg_head"><span class="title">Recognition and Reporting</span></div>
+<div id="body_content" class="fixed_height">
+ 
+<div class="fact_header" id="fact_header">
+<span>FACT:  Athletes at every level under-report signs and symptoms of concussions.
+</span>
+</div>
+
+<div class="fact_content" id="fact_content1">
+<div class="content_area">
+<span class="content_area_title">Excuses for Not Reporting</span>
+<ul> 
+<li>Culture of toughness - "Just shake it off"</li>
+<li>Concerns about letting down coaches and teammates</li>
+<li>Fear of losing playing time</li>
+<li>Concern that others may think you are faking or "flopping"</li>
+</ul>
+</div>
+</div>
+
+<div class="fact_content" id="fact_content2">
+<div class="content_area">
+<span class="content_area_title">In Actuality</span>
+<ul>
+<li>You are hurting your team by not being 100%.</li>
+<li>This is your life! Do not risk a lifetime of physical impairment for any reason.</li>
+</ul>
+</div>
+</div>
+
+<div class="fact_content" id="fact_content3">
+<div class="content_area">
+<span class="content_area_title">Know your body and the signs and symptoms.<br><br>If something doesn't feel right, do not risk it.</span>
+</div>
+</div>
+
+<script>
+$( window ).load(function() {
+  $( "#fact_content1" ).fadeIn( 3000, function() {
+    $( "#fact_content2" ).delay( 6000 ).fadeIn( 3000, function() {
+    $( "#fact_content3" ).delay( 4000 ).fadeIn( 3000 );
+  });});
+  return false;
+});
+</script>
+
+
+</div>
+</div>
+
+</body>
+</html>
+
+

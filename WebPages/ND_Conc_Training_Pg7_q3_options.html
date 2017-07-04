@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notre Dame Concussion Training</title>
+<link href="../WebPages/nd_conc_training.css" rel="stylesheet" type="text/css">
+<script src="../WebPages/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+<div class="pg_head"><span class="title">Learning Checkpoint #2</span>
+</div>
+
+<div id="body_content">
+<div class="opt_question">
+<span class="learn2_question">Which of the following are true regarding Fatima's follow-up care? Select all that apply.</span>
+<form>
+<input type="checkbox" name="situation" value="opt1" id="opt1">A. Fatima must remain in contact with her monitor for as long as directed.<br>
+<input type="checkbox" name="situation" value="opt2" id="opt2">B. Fatima must follow up with the team physician in 24-48 hours for further evaluation and medical advice.<br>
+<input type="checkbox" name="situation" value="opt3" id="opt3">C. Fatima must limit mental and physical activities as directed by her team physician and coaching staff.<br>
+<input type="checkbox" name="situation" value="opt4" id="opt4">D. Fatima should immediately notify her monitor, team physician, or other medical professional if symptoms worsen.
+</form>
+</div>
+
+<div class="opt_answer" id="opt_answer"><span class="correct_opt">These are all true.</span>Fatima must remain with the teammate assigned to monitor her and keep her informed of symptoms for the period of time directed by her team physician. She must also follow up with her team physician within 24-48 hours for further evaluation and treatment directions. Fatima must restrict all physical and mental activity as directed. If her symptoms worsen or new symptoms appear, she must immediately notify her monitor, team physician, or other medical professional.
+</div>
+
+
+<div class="submit_btn" id="submit_btn">
+<span>Submit</span>
+</div>
+
+<div id="opt_Next_Btn">
+<span class="next"><a href="../WebPages/ND_Conc_Training_Pg7_q4.html" target="_parent">Next</a></span>
+</div>
+
+ 
+<script>  
+
+$( "#submit_btn" ).click(function() {
+  $( "#opt_answer" ).fadeIn( 3000, function() {
+    $( "#opt_Next_Btn" ).delay( 3000 ).fadeIn( 3000 );
+  });
+  return false;
+});
+
+</script>
+
+</div>
+</div>
+</body>
+</html>
+
+

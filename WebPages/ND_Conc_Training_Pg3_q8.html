@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notre Dame Concussion Training</title>
+<link href="../WebPages/nd_conc_training.css" rel="stylesheet" type="text/css">
+<script src="../WebPages/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="pg_head"><span class="title">Learning Checkpoint #1</span></div>
+<div id="body_content">
+ 
+<div class="body_txt" id="body_txt1">Identify whether following statements are facts or myths with regard to concussions.
+
+
+<div class="lrn1_quiz" id="lrn1_quiz">
+<div id="ques">
+<span class="question">Not recovering properly before return to play can result in serious injury or death.</span>
+<div class="response fact" id="fact">Fact</div>
+<div class="response myth" id="myth">Myth</div>
+</div>
+<div class="ques_answer" id="ques_answer_correct">
+<div class="result myth" id="myth">This is a Fact</div>
+<p>Not giving the brain enough time to recover can result in repeated and more serious concussions and even lead to permanent brain damage or death. 
+</p>
+</div>
+
+<div class="ques_answer" id="ques_answer_wrong">
+<div class="result myth" id="myth">This is a Fact</div>
+<p>Not giving the brain enough time to recover can result in repeated and more serious concussions and even lead to permanent brain damage or death.
+</p>
+</div>
+<div id="Next_Btn">
+<span class="next"><a href="../WebPages/ND_Conc_Training_Pg3_q9.html" target="_parent">Next</a></span></div>
+ 
+<script>  
+
+$( "#fact" ).click(function() {
+  $( "#ques_answer_correct" ).fadeIn( 3000, function() {
+    $( "#Next_Btn" ).fadeIn( 3000 );
+  });
+  return false;
+});
+
+$( "#myth" ).click(function() {
+  $( "#ques_answer_wrong" ).fadeIn( 3000, function() {
+    $( "#Next_Btn" ).fadeIn( 3000 );
+  });
+  return false;
+});
+</script>
+
+
+
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+</body>
+</html>
+
+

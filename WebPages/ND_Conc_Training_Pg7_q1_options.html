@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notre Dame Concussion Training</title>
+<link href="../WebPages/nd_conc_training.css" rel="stylesheet" type="text/css">
+<script src="../WebPages/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+<div class="pg_head"><span class="title">Learning Checkpoint #2</span>
+</div>
+
+<div id="body_content">
+<div class="opt_question">
+<span class="learn2_question">Which of the following best describes what Fatima should do in this situation?</span>
+<form>
+<input type="checkbox" name="situation" value="opt1" id="opt1">A. Fatima does not need to notify her coach as there was no direct impact to her head.<br>
+<input type="checkbox" name="situation" value="opt2" id="opt2">B. Since the symptoms are minor, Fatima should continue to play and see if the symptoms get any worse.<br>
+<input type="checkbox" name="situation" value="opt3" id="opt3">C. Since she is unsure of the signs, Fatima should only notify her coach if she is specifically asked or removed from play.<br>
+<input type="checkbox" name="situation" value="opt4" id="opt4">D. Fatima should immediately notify her coach of her symptoms.
+</form>
+</div>
+
+<div class="opt_answer" id="opt_answer"><span class="correct_opt">The correct answer is D.</span>By colliding with the other player, Fatima's head may have been injured even if there was no direct impact to the head. Regardless of how minor the symptoms are, she must immediately report any symptoms of a potential concussion. By continuing to play with a possible concussion, Fatima would put herself at serious risk for further injury. Fatima should immediately remove herself from play and notify her coach and/or team physician of the symptoms so she can be evaluated.
+</div>
+
+
+<div class="submit_btn" id="submit_btn">
+<span>Submit</span>
+</div>
+
+<div id="opt_Next_Btn">
+<span class="next"><a href="../WebPages/ND_Conc_Training_Pg7_q2.html" target="_parent">Next</a></span>
+</div>
+
+ 
+<script>  
+
+$( "#submit_btn" ).click(function() {
+  $( "#opt_answer" ).fadeIn( 3000, function() {
+    $( "#opt_Next_Btn" ).delay( 3000 ).fadeIn( 3000 );
+  });
+  return false;
+});
+
+</script>
+
+</div>
+</div>
+</body>
+</html>
+
+

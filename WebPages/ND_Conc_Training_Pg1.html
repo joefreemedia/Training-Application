@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notre Dame Concussion Training</title>
+<link href="../WebPages/nd_conc_training.css" rel="stylesheet" type="text/css">
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([      
+['Football', 37],  
+['Women\'s Soccer', 12],  
+['Women\'s Basketball', 9],          
+['Men\'s Basketball', 8],          
+['Men\'s Soccer', 7],          
+['Softball', 4],          
+['Men\'s Lacrosse', 4],
+['Wrestling', 3],          
+['Baseball', 3],          
+['Men\'s Ice Hockey', 3],          
+['Women\'s Lacrosse', 3],          
+['Women\'s Volleyball', 3],
+['Women\'s Ice Hockey', 2],          
+['Women\'s Field Hockey', 2]          
+      ]);
+
+        // Set chart options
+        var options = {'title':'Sports',
+                       'width':400,
+                       pieHole: 0.4,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="pg_head"><span class="title">Concussion Basics</span></div>
+<div id="body_content">
+
+<div class="body_txt" id="body_txt1">
+<h1>Annual Estimate of Concussions in NCAA Sports</h1>
+Because of the large size of football teams and the amount of player-to-player contact, football has the highest reported incidence of concussions. However, almost two thirds of concussions occur in other sports, including those that are not typically considered "contact" sports. 
+<div class="body_txt2" id="body_txt2">
+<div id="donutchart"></div>
+</div>
+
+</div>
+
+
+
+
+</div>
+</div>
+</body>
+</html>
+
+

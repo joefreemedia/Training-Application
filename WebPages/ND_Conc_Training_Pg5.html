@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notre Dame Concussion Training</title>
+<link href="../WebPages/nd_conc_training.css" rel="stylesheet" type="text/css">
+<script src="../WebPages/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrapper"><div class="pg_head"><span class="title">Return to Play</span></div>
+<div id="body_content"><div class="return_header" id="return_header"><span>The protocol for return to play is a five-stage process, in which a student-athlete's progression is carefully monitored and he or she is gradually returned to full activity.
+</span>
+</div>
+
+<div class="return_content" id="return_content">
+<table class="play">
+	<caption>Return to Play</caption>
+	<thead>
+		<tr>
+			<th id="thStage">Stage</th>
+			<th id="thFunctional">Functional Excercise</th>
+			<th id="thObjective">Stage Objective</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd" id="row1">
+			<th><strong>1. No Activity</strong> </th>
+			<td>Complete physical and cognitive rest </td>
+			<td>Recovery </td>
+		</tr>
+		<tr class="even" id="row2">
+			<th><strong>2. Light Aerobic Exercise</strong></th>
+			<td>Non-impact, light aerobic exercise with limits on movement and heart rate intensity </td>
+			<td>Increase heart rate </td>
+		</tr>
+		<tr class="odd" id="row3">
+			<th><strong>3. Sport-Specific Exercise</strong>  </th>
+			<td>Non-contact, simple movement patterns specific to sport </td>
+			<td>Add movement </td>
+		</tr>
+		<tr class="even" id="row4">
+			<th><strong>4. Non-Contact Training Drills</strong></th>
+			<td>Progression to more complex training drills </td>
+			<td>Exercise, coordination, and cognitive load </td>
+		</tr>
+		<tr class="odd" id="row5">
+			<th><strong>5. Full-Contact Practice</strong></th>
+			<td>Following medical clearance, participate in normal activities </td>
+			<td>Restore confidence and assess functional skills</td>
+		</tr>
+		<tr class="even" id="row6">
+			<th><strong>6. Return to Play</strong> </th>
+			<td>Normal game play </td>
+			<td>Win</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr id="row7">
+			<th colspan="3">If symptoms arise during stage-to-stage progression, the student-athlete <br>
+		    will return to earlier asymptomatic stage. </th>
+		</tr>
+	</tfoot>
+</table>
+</div>
+
+<script>
+$( window ).load(function() {
+  $( "#row1" ).fadeIn( 2000, function() {
+    $( "#row2" ).delay( 3000 ).fadeIn( 2000, function() {
+    $( "#row3" ).delay( 3000 ).fadeIn( 2000, function() {
+    $( "#row4" ).delay( 3000 ).fadeIn( 2000, function() {
+    $( "#row5" ).delay( 3000 ).fadeIn( 2000, function() {
+    $( "#row6" ).delay( 3000 ).fadeIn( 2000, function() {
+    $( "#row7" ).delay( 3000 ).fadeIn( 2000 );
+	});});});});});});
+  return false;
+});
+</script>
+
+
+</div>
+</div>
+
+</body>
+</html>
+
+

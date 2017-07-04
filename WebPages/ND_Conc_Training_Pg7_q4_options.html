@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notre Dame Concussion Training</title>
+<link href="../WebPages/nd_conc_training.css" rel="stylesheet" type="text/css">
+<script src="../WebPages/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+<div class="pg_head"><span class="title">Learning Checkpoint #2</span>
+</div>
+
+<div id="body_content">
+<div class="opt_question">
+<span class="learn2_question">Which of the following is true regarding Fatima's return to play? Select all that apply.</span>
+<form>
+<input type="checkbox" name="situation" value="opt1" id="opt1">A. Fatima is prohibited from returning to normal practice or competition until specifically cleared to do so by her team physician.<br>
+<input type="checkbox" name="situation" value="opt2" id="opt2">B. Fatima must limit activities as directed by her team physician and coaching staff during the return to play process.<br>
+<input type="checkbox" name="situation" value="opt3" id="opt3">C. Although team and practice activities must be limited, Fatima can immediately begin exercising normally outside of practice.<br>
+<input type="checkbox" name="situation" value="opt4" id="opt4">D. Fatima may need to limit her participation in non-athletic activities, such as certain recreational and academic activities.
+</form>
+</div>
+
+<div class="opt_answer" id="opt_answer"><span class="correct_opt">A, B, and D are all true.</span>Fatima may only return to practice, full activity, or competition when specifically cleared to do so by her team physician.  She must limit all of her activities in accordance with the graduated return to play process. She may also need to limit her participation in recreational, academic, or other activities, as directed by her team physician. Restrictions on physical activities are not limited to organized practice activities. 
+</div>
+
+
+<div class="submit_btn" id="submit_btn">
+<span>Submit</span>
+</div>
+
+<div id="opt_Next_Btn">
+<span class="next"><a href="../WebPages/ND_Conc_Training_Pg1.html" target="_parent">Next</a></span>
+</div>
+
+ 
+<script>  
+
+$( "#submit_btn" ).click(function() {
+  $( "#opt_answer" ).fadeIn( 3000, function() {
+    $( "#opt_Next_Btn" ).delay( 3000 ).fadeIn( 3000 );
+  });
+  return false;
+});
+
+</script>
+
+</div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notre Dame Concussion Training</title>
+<link href="../WebPages/nd_conc_training.css" rel="stylesheet" type="text/css">
+<script src="../WebPages/jquery.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+<div class="pg_head"><span class="title">Learning Checkpoint #2</span>
+</div>
+
+<div id="body_content">
+<div class="opt_question">
+<span class="learn2_question">Which of the following are true with respect to the evaluation of symptoms and returning to play? Select all that apply.</span>
+<form>
+<input type="checkbox" name="situation" value="opt1" id="opt1">A. If Fatima feels the symptoms are minor, she should try to reassure her coach that she is okay and can return to the game.<br>
+<input type="checkbox" name="situation" value="opt2" id="opt2">B. Fatima does not require evaluation before returning to play as long as she remains alert for additional or worsening symptoms.<br>
+<input type="checkbox" name="situation" value="opt3" id="opt3">C. Fatima must be evaluated and a concussion needs to be ruled out before she can return to play.<br>
+<input type="checkbox" name="situation" value="opt4" id="opt4">D. If the initial diagnosis is negative for concussion but Fatima still has concerns about her symptoms, she should remove herself from play and not return on that day.
+</form>
+</div>
+
+<div class="opt_answer" id="opt_answer"><span class="correct_opt">The correct answer is C and D.</span>Although it is natural for student-athletes to want to continue to play, doing so with concussion symptoms puts her at risk of further serious injury. Under no circumstances should Fatima continue to play or return to play until she has been fully evaluated and cleared to play. She must cooperate fully with the evaluation and not seek to misdirect or influence the decision. If Fatima has any concerns about her symptoms or health, she should inform her coach and remove herself from play.
+</div>
+
+
+<div class="submit_btn" id="submit_btn">
+<span>Submit</span>
+</div>
+
+<div id="opt_Next_Btn">
+<span class="next"><a href="../WebPages/ND_Conc_Training_Pg7_q3.html" target="_parent">Next</a></span>
+</div>
+
+ 
+<script>  
+
+$( "#submit_btn" ).click(function() {
+  $( "#opt_answer" ).fadeIn( 3000, function() {
+    $( "#opt_Next_Btn" ).delay( 3000 ).fadeIn( 3000 );
+  });
+  return false;
+});
+
+</script>
+
+</div>
+</div>
+</body>
+</html>
+
+
